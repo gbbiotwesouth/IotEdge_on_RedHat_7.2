@@ -1,4 +1,4 @@
-# Deploy Azure Iot Edge on a Red Het 7.2 VM in Azure 
+# Deploy Azure Iot Edge (Preview) on a Red Het 7.2 VM in Azure 
 This article explains the steps to take when deploying the current preview version of the Azure IoT Edge. The current deployment set and documentation is not prepared for Red Hat 7 and therefore a few small adjustments need to be made to succesfully install IoT Edge in this configuration. The generic steps can be found in the [linux quickstart](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux).
 
 ## Prepare a Red Hat 7.2 VM in Azure
