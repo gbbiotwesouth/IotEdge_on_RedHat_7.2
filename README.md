@@ -18,6 +18,7 @@ You can use the normal steps in Azure to deploy a Red Hat 7.2 VM [Create a Linux
         `pip --version`
 3.  Install Docker-CE for Linux and make sure that it's running using the [CentOS setup](https://docs.docker.com/install/linux/docker-ce/centos/)
 
+## Install Azure IoT Edge (Preview)
 Once these steps have been executed correctly you can then install IoT Edge on Red Hat 7.2 similar as describe in [Install and start the IoT Edge runtime](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux#install-and-start-the-iot-edge-runtime) steps, with some minor adjustments.
 On the Red Hat VM run the following commands: 
 1.  Download the IoT Edge control script:
