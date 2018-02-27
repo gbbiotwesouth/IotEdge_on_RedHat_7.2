@@ -5,17 +5,17 @@ This article explains the steps to take when deploying the current preview versi
 ** These steps replace the Prerequisites steps of the [linux quickstart](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux#prerequisites).<br>
 You can use the normal steps in Azure to deploy a Red Hat 7.2 VM [Create a Linux virtual machine with the Azure portal](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal). I've used the 'Red Hat Enterprise Linux 7.2 - Pay-As-You-Go Premium' image. Once you've deployed the VM, login using ssh and execute the following steps:
 1.  Update yum: `sudo yum update`. This will take a few minutes.
-2.  Install Python pip, to install the IoT Edge runtime: 
-    a.  Install tyhe setup tools:
-        `wget https://pypi.python.org/packages/source/s/setuptools/setuptools-7.0.tar.gz --no-check-certificate`
-        `tar xzf setuptools-7.0.tar.gz`
-        `cd setuptools-7.0`
-        `sudo python setup.py install`
-    b.  Once the setup tools are installed you can install pip:
-        `wget https://bootstrap.pypa.io/get-pip.py`
-        `python get-pip.py`
-    c.  Check if pip was installed correctly:
-        `pip --version`
+2.  Install Python pip, to install the IoT Edge runtime: <br>
+    a.  Install the setup tools: <br>
+        `wget https://pypi.python.org/packages/source/s/setuptools/setuptools-7.0.tar.gz --no-check-certificate` <br>
+        `tar xzf setuptools-7.0.tar.gz` <br>
+        `cd setuptools-7.0` <br>
+        `sudo python setup.py install` <br>
+    b.  Once the setup tools are installed you can install pip: <br>
+        `wget https://bootstrap.pypa.io/get-pip.py` <br>
+        `python get-pip.py` <br>
+    c.  Check if pip was installed correctly: <br>
+        `pip --version` <br>
 3.  Install Docker-CE for Linux and make sure that it's running using the [CentOS setup](https://docs.docker.com/install/linux/docker-ce/centos/)
 
 ## Install Azure IoT Edge (Preview)
