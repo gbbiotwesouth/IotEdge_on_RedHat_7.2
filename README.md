@@ -29,7 +29,7 @@ On the Red Hat VM run the following commands:
     Goto line 540 and replace `cipher=cipher` with `cipher`<br>
     Goto line 541 and replace `passphrase=passphrase` with `passphrase` <br>
     Save the file. <br>
-3.  Then continue with the steps as descibe in the quickstart. `sudo iotedgectl setup --connection-string "{device connection string}" --auto-cert-gen-force-no-passwords` and following.
+3.  Then continue with the steps as descibed in the quickstart: `sudo iotedgectl setup --connection-string "{device connection string}" --auto-cert-gen-force-no-passwords` and following.
 
 ## Deploy a module to the IoT Edge
 Once the Iot Edge is deployed and running on Red Hat 7.2 you can deploy a module as described in the [linux quickstart](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux#deploy-a-module).
