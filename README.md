@@ -3,7 +3,7 @@ This article explains the steps to take when deploying the current preview versi
 
 ## Prepare a Red Hat 7.2 VM in Azure
 ** These steps replace the Prerequisites steps of the [linux quickstart](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux#prerequisites).<br>
-You can use the normal steps in Azure to deploy a Red Hat 7.2 VM [Create a Linux virtual machine with the Azure portal](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal). I've used the 'Red Hat Enterprise Linux 7.2 - Pay-As-You-Go Premium' image. Once you've deployed the VM, login using ssh and execute the following steps:
+You can use the normal steps in Azure to deploy a Red Hat 7.2 VM [Create a Linux virtual machine with the Azure portal](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal). I've used the 'Red Hat Enterprise Linux 7.2 - Pay-As-You-Go Premium' image. Once you've deployed the VM, log in using ssh and execute the following steps:
 1.  Update yum: `sudo yum update`. This will take a few minutes.
 2.  Install Python pip, to install the IoT Edge runtime: <br>
     a.  Install the setup tools: <br>
