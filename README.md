@@ -19,12 +19,12 @@ You can use the normal steps in Azure to deploy a Red Hat 7.2 VM [Create a Linux
 3.  Install Docker-CE for Linux and make sure that it's running using the [CentOS setup](https://docs.docker.com/install/linux/docker-ce/centos/)
 
 Once these steps have been executed correctly you can then install IoT Edge on Red Hat 7.2 simular as describe in [Install and start the IoT Edge runtime](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux#install-and-start-the-iot-edge-runtime) steps, with some minor adjustments.
-On the Red Hat VM run the following command: 
+On the Red Hat VM run the following commands: 
 1.  Download the IoT Edge control script:
     `sudo pip install -U azure-iot-edge-runtime-ctl`
 2.  Edit the /usr/lib/python2.7/site-packages/edgectl/utils/certutil.py file to ensure it runs on Red Hat 7.2:
     `sudo nano /usr/lib/python2.7/site-packages/edgectl/utils/certutil.py`
-    Go to line 530 and change `passphrase = None` into `passphrase = '<your passphrase>'`. <your passphrase> can be anything you want as long as it is a string of minimum length 4 and between single quotes. `passphrase = '12345'` works.<br>
+    Go to line 530 and change `passphrase = None` into `passphrase = '<your passphrase>'`. The passphrase can be anything you want as long as it is a string of minimum length 4 and between single quotes. `passphrase = '12345'` works.<br>
     Goto line 540 and replace `cipher=cipher` with `cipher`<br>
     Goto line 541 and replace `passphrase=passphrase` with `passphrase`
     Save the file.
