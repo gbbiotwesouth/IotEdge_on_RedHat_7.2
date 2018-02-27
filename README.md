@@ -13,7 +13,7 @@ You can use the normal steps in Azure to deploy a Red Hat 7.2 VM [Create a Linux
         `sudo python setup.py install` <br>
     b.  Once the setup tools are installed you can install pip: <br>
         `wget https://bootstrap.pypa.io/get-pip.py` <br>
-        `python get-pip.py` <br>
+        `sudo python get-pip.py` <br>
     c.  Check if pip was installed correctly: <br>
         `pip --version` <br>
 3.  Install Docker-CE for Linux and make sure that it's running using the [CentOS setup](https://docs.docker.com/install/linux/docker-ce/centos/)
@@ -30,3 +30,6 @@ On the Red Hat VM run the following commands:
     Goto line 541 and replace `passphrase=passphrase` with `passphrase` <br>
     Save the file. <br>
 3.  Then continue with the steps as descibe in the quickstart. `sudo iotedgectl setup --connection-string "{device connection string}" --auto-cert-gen-force-no-passwords` and following.
+
+## Deploy a module to the IoT Edge
+Once the Iot Edge is deployed and running on Red Hat 7.2 you can deploy a module as described in the [linux quickstart](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux#deploy-a-module).
