@@ -25,7 +25,7 @@ On the Red Hat VM run the following commands:
     `sudo pip install -U azure-iot-edge-runtime-ctl` <br>
 2.  Edit the /usr/lib/python2.7/site-packages/edgectl/utils/certutil.py file to ensure it runs on Red Hat 7.2: <br>
     `sudo nano /usr/lib/python2.7/site-packages/edgectl/utils/certutil.py` <br>
-    Go to line 530 and change `passphrase = None` into `passphrase = '<your passphrase>'`. The passphrase can be anything you want as long as it is a  <br>string of minimum length 4 and between single quotes. `passphrase = '12345'` works.<br>
+    Go to line 530 and change `passphrase = None` into `passphrase = '<your passphrase>'`. The passphrase can be anything you want as long as it is a string of minimum length 4 and between single quotes. `passphrase = '12345'` works.<br>
     Goto line 540 and replace `cipher=cipher` with `cipher`<br>
     Goto line 541 and replace `passphrase=passphrase` with `passphrase` <br>
     Save the file. <br>
