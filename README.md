@@ -15,7 +15,7 @@ You can use the normal steps in Azure to deploy a Red Hat 7.2 VM [Create a Linux
         `cd Python-2.7.14` <br>
         `./configure --enable-optimizations` <br>
         `make altinstall` <br>
-    b.  Check Python version:
+    b.  Check Python version: <br>
         `python2.7 -V` <br>
 2.  Install Python pip, to install the IoT Edge runtime: <br>
     a. Install pip: <br>
